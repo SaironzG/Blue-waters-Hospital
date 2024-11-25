@@ -1,0 +1,139 @@
+.ServiceWrapper {
+    padding: 50px 20px;
+    background-color: #ecf5fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    .h1 {
+      margin-top: 50px;
+      margin-bottom: 40px;
+      text-align: center;
+  
+      h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+  
+      h3 {
+        font-size: 1.8rem;
+        color: #1fd4f3;
+        font-weight: bold;
+      }
+  
+      .heart {
+        color: #1fd4f3;
+        animation: pulse 1.5s infinite ease-in-out;
+      }
+    }
+  
+    .cards {
+      display: flex;
+      flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+      gap: 2rem;
+      justify-content: center;
+  
+      .card {
+        padding: 1.5rem;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 220px;
+        height: 280px;
+        background-color: #fff;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+        transform: translateY(0);
+  
+        img {
+          width: 100px;
+          margin-bottom: 1rem;
+        }
+  
+        .tooth {
+          width: 78px;
+        }
+  
+        h4 {
+          font-size: 1.2rem;
+          font-weight: bold;
+          margin-top: 0.5rem;
+          color: #555;
+        }
+  
+        p {
+          font-size: 0.9rem;
+          color: #777;
+          text-align: center;
+          margin-top: 0.5rem;
+        }
+  
+        &:hover {
+          transform: translateY(-10px) scale(1.05);
+          background-color: #1fd4f3;
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+          color: #fff;
+  
+          img {
+            transform: scale(1.2);
+            transition: transform 0.3s ease-in-out;
+          }
+  
+          h4,
+          p {
+            color: #fff;
+          }
+        }
+      }
+    }
+  
+    /* Keyframes for heart animation */
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+    }
+  
+    /* Media Queries */
+    @media (max-width: 768px) {
+      .h1 h1 {
+        font-size: 2rem;
+      }
+  
+      .h1 h3 {
+        font-size: 1.5rem;
+      }
+  
+      .cards .card {
+        width: 180px;
+        height: auto;
+        padding: 1rem;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      .h1 h1 {
+        font-size: 1.8rem;
+      }
+  
+      .h1 h3 {
+        font-size: 1.2rem;
+      }
+  
+      .cards {
+        gap: 1.5rem;
+      }
+  
+      .cards .card {
+        width: 150px;
+      }
+    }
+  }
+  

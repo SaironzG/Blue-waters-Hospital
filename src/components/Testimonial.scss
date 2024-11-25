@@ -1,0 +1,56 @@
+// Testimonial.scss
+.testimonial-section {
+    padding: 40px;
+    text-align: center;
+    background-color: #f9f9f9;
+    .testimonial-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    .testimonial-cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .testimonial-card {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 300px;
+        flex: 1 1 calc(33.333% - 20px);
+        box-sizing: border-box;
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 15px;
+            color: #555;
+        }
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .testimonial-image {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+            .testimonial-name {
+                font-weight: bold;
+                color: #333;
+            }
+            .testimonial-role {
+                color: #777;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonial-card {
+        flex: 1 1 100%;
+    }
+}
