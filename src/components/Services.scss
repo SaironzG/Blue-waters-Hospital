@@ -1,6 +1,6 @@
 .ServiceWrapper {
     padding: 50px 20px;
-    background-color: #ecf5fa;
+  
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,7 +37,7 @@
   
       .card {
         padding: 1.5rem;
-        border-radius: 15px;
+        border-radius: 0 30px;
         display: flex;
         flex-direction: column;
         align-items: center;

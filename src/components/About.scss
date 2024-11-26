@@ -5,12 +5,13 @@
     gap: 40px;
     align-items: center;
     justify-content: center;
-    background-color: #f5f9fc;
+ 
   
     .pic {
       width: 100%;
       max-width: 500px;
       height: auto;
+      
   
       img {
         width: 100%;
@@ -66,7 +67,7 @@
   
           img {
             width: 100px;
-            border-radius: 50%;
+            border-radius: 0 30px;
             border: 3px solid #1fd4f3;
             padding: 5px;
           }

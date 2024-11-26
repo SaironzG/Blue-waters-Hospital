@@ -58,7 +58,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>Copy Right © 2021. Medinova. Powered by MBitem</p>
+        <p>Copy Right © SAIRONZ GAVI All rights reserved</p>
       </div>
     </footer>
   );

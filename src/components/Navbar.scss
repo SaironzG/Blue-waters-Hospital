@@ -6,6 +6,7 @@
   width: 100%;
   z-index: 1000;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 0 30px;
 
   // Prevent horizontal overflow
   overflow-x: hidden;
@@ -23,7 +24,8 @@
 
     // Logo Styling
     .navbar-logo img {
-      height: 3rem;
+      height: auto;
+      width: 8rem;
       transition: transform 0.3s ease;
       cursor: pointer;
 
@@ -36,15 +38,15 @@
     .navbar-links {
       display: none;
 
-      @media (min-width: 768px) {
+      @media (min-width: 949px) {
         display: flex;
         gap: 2rem;
       }
 
       .navbar-link a {
-        color: black;
+        color: #0086af;
         font-size: 1rem;
-        font-weight: 500;
+        font-weight: 600;
         text-transform: uppercase;
         text-decoration: none;
         position: relative;
@@ -85,13 +87,13 @@
     .navbar-appointment-btn {
       display: none;
 
-      @media (min-width: 768px) {
+      @media (min-width: 949px) {
         display: inline-block;
         background: #28b9e7;
         color: white;
         font-weight: bold;
         padding: 0.5rem 1.5rem;
-        border-radius: 9999px;
+        border-radius: 0 30px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         transition: all 0.3s ease;
 
@@ -130,7 +132,7 @@
       }
 
       // Hide hamburger on larger screens
-      @media (min-width: 768px) {
+      @media (min-width: 949px) {
         display: none;
       }
     }
@@ -140,7 +142,7 @@
   .navbar-mobile-links {
     display: none;
 
-    @media (max-width: 768px) {
+    @media (max-width: 949px) {
       display: flex;
       flex-direction: column;
       align-items: center;
